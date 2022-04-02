@@ -2,6 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_task_gitrepo_vgts/reposHome.dart';
 import 'package:flutter_task_gitrepo_vgts/services/auth_service.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_task_gitrepo_vgts/usersHome.dart';
+
+import 'orgsHome.dart';
 
 final AuthService authService = AuthService();
 
@@ -17,10 +20,11 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   final nameController = TextEditingController();
+  final orgnameController = TextEditingController();
+
 
   late String name = nameController.text;
-
-
+  late String org = orgnameController.text;
 
   late bool loader;
 
@@ -120,6 +124,21 @@ class _HomeState extends State<Home> {
                             hintText: 'Username'),
                         controller: nameController),
                   ),
+                  ElevatedButton(
+                      child: Text(
+                        'Go to User Data',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18
+                        ),
+                      ),
+                      onPressed: (){
+                        Navigator.of(context)
+                            .pushReplacement(
+                            MaterialPageRoute(builder: (context) => UserDetailsScreen(username: name),
+                            ));
+                      }
+                  ),
                   SizedBox(height: height*0.03,),
                   ElevatedButton(
                     child: Text(
@@ -136,7 +155,34 @@ class _HomeState extends State<Home> {
                       ));
                     }
                   ),
-
+                  SizedBox(height: height*0.03,),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextFormField(
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18
+                        ),
+                        decoration: const InputDecoration(
+                            border: UnderlineInputBorder(),
+                            hintText: 'Organisation Name'),
+                        controller: orgnameController),
+                  ),
+                  ElevatedButton(
+                      child: Text(
+                        'Go to Organisation List',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18
+                        ),
+                      ),
+                      onPressed: (){
+                        Navigator.of(context)
+                            .pushReplacement(
+                            MaterialPageRoute(builder: (context) => OrgHome(organisationName: org),
+                            ));
+                      }
+                  ),
                 ],
               )
           ),

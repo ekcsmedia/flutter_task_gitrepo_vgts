@@ -22,8 +22,8 @@ Future<All> fetchOrgs(organisation) async {
 }
 
 class OrgHome extends StatefulWidget {
-  late String username;
-  OrgHome({required this.username});
+  late String organisationName;
+  OrgHome({required this.organisationName});
 
   @override
   _OrgHomeState createState() => _OrgHomeState();
@@ -35,7 +35,7 @@ class _OrgHomeState extends State<OrgHome> {
   @override
   void initState() {
     super.initState();
-    futureOrgs = fetchOrgs(widget.username);
+    futureOrgs = fetchOrgs(widget.organisationName);
   }
 
   Widget build(BuildContext context) {

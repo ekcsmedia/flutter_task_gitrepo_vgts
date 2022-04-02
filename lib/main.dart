@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Firebase GitHub Authentication',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xffece49d),
+        scaffoldBackgroundColor: const Color(0xff1a1a19),
         textTheme: GoogleFonts.openSansTextTheme(
             Theme.of(context).textTheme
         ),
