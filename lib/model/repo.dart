@@ -1,3 +1,5 @@
+// repository data retrieved  and data collection in the list is defined in this model
+
 class Repo{
   String name;
   String htmlUrl; //html_url

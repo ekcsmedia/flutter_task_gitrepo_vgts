@@ -5,6 +5,8 @@ import 'package:flutter_task_gitrepo_vgts/home.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_task_gitrepo_vgts/model/repo.dart';
 
+// Repository data are fetched and listed
+
 Future<All> fetchRepos(usernameGit) async {
 
   final String usernameG = usernameGit;

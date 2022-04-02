@@ -7,6 +7,8 @@ import 'package:http/http.dart' as http;
 
 import '../model/user.dart';
 
+// this class is to get user data from github and map to user details in User class
+
 class UserProvider with ChangeNotifier {
   late User user;
 

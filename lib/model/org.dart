@@ -1,3 +1,4 @@
+// this class holds data requirement of orgs class, gets list of organisations and maps to orgs list
 class Orgs{
   String url;
   String description;

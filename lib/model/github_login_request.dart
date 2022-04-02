@@ -1,3 +1,5 @@
+// parameters for login request
+
 class GitHubLoginRequest {
   String clientId;
   String clientSecret;

@@ -6,6 +6,8 @@ import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:flutter_task_gitrepo_vgts/model/github_login_request.dart';
 import 'package:flutter_task_gitrepo_vgts/model/github_login_response.dart';
 
+// Github authentication service happens thro this class
+
 class AuthService{
 
   final auth.FirebaseAuth _firebaseAuth = auth.FirebaseAuth.instance;

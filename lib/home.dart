@@ -6,6 +6,8 @@ import 'package:flutter_task_gitrepo_vgts/usersHome.dart';
 
 import 'orgsHome.dart';
 
+// home screen after successful login
+
 final AuthService authService = AuthService();
 
 class Home extends StatefulWidget {

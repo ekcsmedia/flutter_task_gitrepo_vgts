@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task_gitrepo_vgts/provider/userProvider.dart';
 import 'package:provider/provider.dart';
 
+// user data are fetched and shown
+
+
 class UserDetailsScreen extends StatefulWidget {
   late String username;
   UserDetailsScreen({required this.username});

@@ -5,6 +5,8 @@ import 'dart:async';
 import 'package:uni_links/uni_links.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+// login page to go to github login
+
 final AuthService authService = AuthService();
 
 class LoginPage extends StatefulWidget {

@@ -7,6 +7,8 @@ import 'package:flutter_task_gitrepo_vgts/model/org.dart';
 import 'model/org.dart';
 import 'model/org.dart';
 
+// organisation data are fetched and listed
+
 Future<All> fetchOrgs(organisation) async {
 
   final String organisationN = organisation;
