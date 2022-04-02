@@ -20,7 +20,11 @@ class UserProvider with ChangeNotifier {
     });
     final responseData = json.decode(response.body) as Map<String, dynamic>;
     print(responseData['name']);
-
+    user = User(
+      name: responseData['login'],
+      avatarUrl: responseData['avatar_url'],
+      email: responseData['email']
+    );
     } catch(e) {
       print(e);
     }

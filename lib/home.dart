@@ -22,7 +22,6 @@ class _HomeState extends State<Home> {
   final nameController = TextEditingController();
   final orgnameController = TextEditingController();
 
-
   late String name = nameController.text;
   late String org = orgnameController.text;
 
