@@ -5,11 +5,11 @@ class User{
 
   User({required this.name, required this.avatarUrl, required this.email});
 
-  factory User.fromJson(Map<String, dynamic> json) {
+ /* factory User.fromJson(Map<String, dynamic> json) {
     return User(
       name: json ['name'],
       avatarUrl: json['avatar_url'],
       email: json['email'],
     );
-  }
+  } */
 }
