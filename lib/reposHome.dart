@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_task_gitrepo_vgts/home.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_task_gitrepo_vgts/model/repo.dart';
 
@@ -38,9 +39,17 @@ class _RepoHomeState extends State<RepoHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('GitHub Repo'),
+        title: Text('GitHub Repo List'),
         automaticallyImplyLeading: true,
-      ),
+        actions: [
+          IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () async {Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Home())
+              );
+              })
+        ],      ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Container(

@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+// the landing page verifies if the user is already logged in
 
 class LandingPage extends StatelessWidget {
   @override
